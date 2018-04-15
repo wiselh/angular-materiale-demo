@@ -1,4 +1,5 @@
 <!-- Checkbox -->
+<h2>Checkbox</h2>
 <mat-checkbox
   #showDetails
   [value]=""
@@ -7,3 +8,14 @@
 >Subscribe</mat-checkbox>
 <div *ngIf="showDetails.checked">Some details here ...</div>
 <!-- end checkbox -->
+<br>
+<hr>
+<br>
+<!-- radio button -->
+<h2>Radio Button</h2>
+
+<mat-radio-group value="1">
+  <mat-radio-button value="1">Option 1</mat-radio-button>
+  <mat-radio-button value="0">Option 2</mat-radio-button>
+</mat-radio-group>
+<!-- end radio button -->
