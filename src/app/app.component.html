@@ -8,24 +8,18 @@
 >Subscribe</mat-checkbox>
 <div *ngIf="showDetails.checked">Some details here ...</div>
 <!-- end checkbox -->
-<br>
-<hr>
-<br>
+
 <!-- radio button -->
 <h2>Radio Button</h2>
-
 <mat-radio-group value="1">
   <mat-radio-button value="1">Option 1</mat-radio-button>
   <mat-radio-button value="0">Option 2</mat-radio-button>
 </mat-radio-group>
 <!-- end radio button -->
 
-<br>
-<hr>
-<br>
+
 <!-- DropDownLits -->
 <h2>DropDownLits</h2>
-
 <mat-form-field>
   <mat-select [(value)]="isSelected" placeholder="Favorite food">
     <mat-option>None</mat-option>
@@ -36,4 +30,21 @@
 </mat-form-field>
 
 <p>You selected: {{ isSelected }}</p>
+<!-- end DropDownLits -->
+
+<!-- DropDownLits -->
+<h2>Inputs</h2>
+<mat-input-container>
+  <input ngModel name="email" type="text" matInput placeholder="enter your email" required>
+  <span matSuffix>@gmail.com</span>
+  <mat-hint>type your email here</mat-hint>
+  <mat-error>
+    Email is
+    <strong>required</strong>
+  </mat-error>
+</mat-input-container>
+<br>
+<mat-input-container class="example-full-width">
+  <textarea matInput placeholder="Leave a comment"></textarea>
+</mat-input-container>
 <!-- end DropDownLits -->
