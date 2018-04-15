@@ -19,3 +19,21 @@
   <mat-radio-button value="0">Option 2</mat-radio-button>
 </mat-radio-group>
 <!-- end radio button -->
+
+<br>
+<hr>
+<br>
+<!-- DropDownLits -->
+<h2>DropDownLits</h2>
+
+<mat-form-field>
+  <mat-select [(value)]="isSelected" placeholder="Favorite food">
+    <mat-option>None</mat-option>
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{ food.viewValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>You selected: {{ isSelected }}</p>
+<!-- end DropDownLits -->
